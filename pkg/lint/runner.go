@@ -9,7 +9,6 @@ import (
 	"github.com/pkg/errors"
 	gopackages "golang.org/x/tools/go/packages"
 
-	"github.com/golangci/golangci-lint/internal/errorutil"
 	"github.com/golangci/golangci-lint/pkg/config"
 	"github.com/golangci/golangci-lint/pkg/fsutils"
 	"github.com/golangci/golangci-lint/pkg/goutil"
@@ -20,6 +19,7 @@ import (
 	"github.com/golangci/golangci-lint/pkg/result"
 	"github.com/golangci/golangci-lint/pkg/result/processors"
 	"github.com/golangci/golangci-lint/pkg/timeutils"
+	"github.com/golangci/golangci-lint/xinternal/errorutil"
 )
 
 type Runner struct {
